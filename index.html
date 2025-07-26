@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mother Milk Palace | Grocery Delivered Fast</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="custom.js" defer></script>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Navbar Start -->
+  <header class="navbar">
+    <div class="container">
+      <div class="logo">
+        <img src="images/logo.png" alt="Mother Milk Palace Logo">
+        <h1>Mother Milk Palace</h1>
+      </div>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#categories">Categories</a></li>
+          <li><a href="#offers">Offers</a></li>
+          <li><a href="#cart">Cart</a></li>
+          <li><a href="#login">Login</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- Navbar End -->
+
+  <!-- Hero Section Start -->
+  <section class="hero" id="home">
+    <div class="container hero-content">
+      <div class="hero-text">
+        <h2>Fresh Groceries Delivered in Minutes</h2>
+        <p>Your one-stop shop for everything from milk to munchies.</p>
+        <a href="#categories" class="btn-primary">Shop Now</a>
+      </div>
+      <div class="hero-image">
+        <img src="images/hero-banner.png" alt="Groceries Delivery">
+      </div>
+    </div>
+  </section>
+  <!-- Hero Section End -->
+
+  <!-- Categories Section Start -->
+  <section class="categories" id="categories">
+    <div class="container">
+      <h2 class="section-title">Shop by Category</h2>
+      <div class="categories-grid">
+        <div class="category-card">
+          <img src="images/categories/milk.png" alt="Milk, Dairy">
+          <h3>Milk, Dairy</h3>
+        </div>
+        <div class="category-card">
+          <img src="images/categories/packaged-food.png" alt="Packaged Food">
+          <h3>Packaged Food</h3>
+        </div>
+        <div class="category-card">
+          <img src="images/categories/ice-cream.png" alt="Ice creams & More">
+          <h3>Ice creams & More</h3>
+        </div>
+        <div class="category-card">
+          <img src="images/categories/chocolates.png" alt="Sweet Cravings">
+          <h3>Sweet Cravings</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Categories Section End -->
+
+          <div class="categories-grid">
+          <!-- Already added 4 cards before -->
+          <div class="category-card">
+            <img src="images/categories/cold-drinks.png" alt="Cold Drinks & Juices">
+            <h3>Cold Drinks & Juices</h3>
+          </div>
+          <div class="category-card">
+            <img src="images/categories/munchies.png" alt="Munchies">
+            <h3>Munchies</h3>
+          </div>
+          <div class="category-card">
+            <img src="images/categories/biscuits.png" alt="Biscuits & Bakery">
+            <h3>Biscuits & Bakery</h3>
+          </div>
+          <div class="category-card">
+            <img src="images/categories/breakfast.png" alt="Breakfast & Sauces">
+            <h3>Breakfast & Sauces</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Categories Section End -->
+
+    <!-- Offers Section Start -->
+    <section class="offers" id="offers">
+      <div class="container">
+        <h2 class="section-title">Exclusive Offers</h2>
+        <div class="offers-grid">
+          <div class="offer-card">
+            <img src="images/offers/offer1.png" alt="Offer 1">
+            <div class="offer-details">
+              <h4>Get 20% Off on Milk Products</h4>
+              <p>Use code: MILK20</p>
+            </div>
+          </div>
+          <div class="offer-card">
+            <img src="images/offers/offer2.png" alt="Offer 2">
+            <div class="offer-details">
+              <h4>Buy 1 Get 1 Free – Chocolates</h4>
+              <p>Limited Time Deal!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Offers Section End -->
+
+    <!-- Cart Section Start -->
+    <section class="cart" id="cart">
+      <div class="container">
+        <h2 class="section-title">Your Cart</h2>
+        <div class="cart-items">
+          <!-- Sample Item -->
+          <div class="cart-item">
+            <img src="images/products/milk-pouch.png" alt="Milk Pouch">
+            <div class="item-details">
+              <h4>Mother Dairy Milk Pouch</h4>
+              <p>₹45</p>
+              <div class="quantity-controls">
+                <button class="decrease">-</button>
+                <input type="text" value="1" readonly>
+                <button class="increase">+</button>
+              </div>
+            </div>
+            <button class="remove-item"><i class="fas fa-trash"></i></button>
+          </div>
+        </div>
+        <div class="cart-total">
+          <p>Total: ₹45</p>
+          <button class="btn-primary">Proceed to Checkout</button>
+        </div>
+      </div>
+    </section>
+    <!-- Cart Section End -->
+
+    <!-- Login Modal Start -->
+    <div class="login-modal" id="login">
+      <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h2>Login to Continue</h2>
+        <form class="login-form">
+          <label for="email">Email:</label>
+          <input type="email" id="email" placeholder="you@example.com" required>
+          
+          <label for="password">Password:</label>
+          <input type="password" id="password" placeholder="••••••••" required>
+
+          <button type="submit" class="btn-primary">Login</button>
+        </form>
+        <p class="signup-text">Don’t have an account? <a href="#">Sign Up</a></p>
+      </div>
+    </div>
+    <!-- Login Modal End -->
+    <!-- Footer Start -->
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <div class="footer-col">
+          <h3>Mother Milk Palace</h3>
+          <p>Delivering freshness right at your doorstep. We bring you milk, groceries, snacks and more – faster than ever.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#categories">Categories</a></li>
+            <li><a href="#offers">Offers</a></li>
+            <li><a href="#cart">Cart</a></li>
+            <li><a href="#login">Login</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Connect With Us</h4>
+          <ul class="social-links">
+            <li><a href="#"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+            <li><a href="#"><i class="fab fa-youtube"></i> YouTube</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Get Our App</h4>
+          <a href="#"><img src="images/appstore.png" alt="Download on App Store" class="app-badge"></a>
+          <a href="#"><img src="images/playstore.png" alt="Get it on Google Play" class="app-badge"></a>
+        </div>
+      </div>
+
+      <div class="newsletter">
+        <div class="container">
+          <form class="newsletter-form">
+            <label for="newsletter-email">Subscribe to our Newsletter:</label>
+            <input type="email" id="newsletter-email" placeholder="Enter your email">
+            <button type="submit" class="btn-primary">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container">
+          <p>&copy; 2025 Mother Milk Palace. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollTopBtn" title="Go to top">
+      <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Sticky Cart Icon -->
+    <div class="sticky-cart">
+      <a href="#cart">
+        <i class="fas fa-shopping-cart"></i>
+        <span class="cart-count">1</span>
+      </a>
+    </div>
+      <!-- Page Loader -->
+    <div id="loader-wrapper">
+      <div class="loader"></div>
+      <p>Loading Mother Milk Palace...</p>
+    </div>
+
+    <!-- Featured Products Start -->
+    <section class="featured-products">
+      <div class="container">
+        <h2 class="section-title">Featured Products</h2>
+        <div class="products-grid">
+          <div class="product-card">
+            <img src="images/products/amul-butter.png" alt="Amul Butter">
+            <h4>Amul Butter 500g</h4>
+            <p>₹230</p>
+            <button class="btn-secondary">Add to Cart</button>
+          </div>
+
+          <div class="product-card">
+            <img src="images/products/maggi.png" alt="Maggi">
+            <h4>Maggi 2-Min Noodles</h4>
+            <p>₹14</p>
+            <button class="btn-secondary">Add to Cart</button>
+          </div>
+
+          <div class="product-card">
+            <img src="images/products/oreo.png" alt="Oreo Biscuits">
+            <h4>Oreo Biscuits</h4>
+            <p>₹20</p>
+            <button class="btn-secondary">Add to Cart</button>
+          </div>
+
+          <div class="product-card">
+            <img src="images/products/amul-cool.png" alt="Amul Cool Milk">
+            <h4>Amul Cool Milk</h4>
+            <p>₹30</p>
+            <button class="btn-secondary">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Featured Products End -->
+
+    <!-- Testimonials Start -->
+    <section class="testimonials">
+      <div class="container">
+        <h2 class="section-title">What Our Customers Say</h2>
+        <div class="testimonial-grid">
+          <div class="testimonial-card">
+            <p>"Super fast delivery, fresh products every time! Highly recommended."</p>
+            <h5>– Neha Sharma</h5>
+          </div>
+
+          <div class="testimonial-card">
+            <p>"Love the user interface. So easy to find what I need."</p>
+            <h5>– Rohit Mehta</h5>
+          </div>
+
+          <div class="testimonial-card">
+            <p>"Their dairy section is top notch. Always stocked and fresh."</p>
+            <h5>– Priya Desai</h5>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Testimonials End -->
+
+    <!-- FAQs Section Start -->
+    <section class="faqs">
+      <div class="container">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <div class="faq-accordion">
+          <div class="faq-item">
+            <button class="faq-question">How fast is delivery?</button>
+            <div class="faq-answer">
+              <p>We deliver within 10-20 minutes in supported areas.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">Is there a minimum order?</button>
+            <div class="faq-answer">
+              <p>No minimum order. Order as little or as much as you like.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">Do you accept online payments?</button>
+            <div class="faq-answer">
+              <p>Yes! We accept UPI, cards, wallets and cash on delivery.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FAQs Section End -->
+    <!-- Brand Partners Start -->
+    <section class="brand-partners">
+      <div class="container">
+        <h2 class="section-title">Our Trusted Partners</h2>
+        <div class="brand-logos">
+          <img src="images/brands/amul.png" alt="Amul">
+          <img src="images/brands/mother-dairy.png" alt="Mother Dairy">
+          <img src="images/brands/nestle.png" alt="Nestlé">
+          <img src="images/brands/pepsico.png" alt="PepsiCo">
+          <img src="images/brands/itc.png" alt="ITC">
+        </div>
+      </div>
+    </section>
+    <!-- Brand Partners End -->
+
+    <!-- Delivery Location Checker Start -->
+    <section class="location-checker">
+      <div class="container">
+        <h2 class="section-title">Check Delivery Availability</h2>
+        <form class="location-form">
+          <input type="text" placeholder="Enter your PIN code" maxlength="6">
+          <button type="submit" class="btn-primary">Check</button>
+        </form>
+        <p class="location-message">*Delivery is available in select cities only</p>
+      </div>
+    </section>
+    <!-- Delivery Location Checker End -->
+
+    <!-- Floating Support Button -->
+    <div class="support-button">
+      <button id="supportToggle">
+        <i class="fas fa-headset"></i> Help
+      </button>
+    </div>
+
+    <!-- Support Modal -->
+    <div class="support-modal" id="supportModal">
+      <div class="support-content">
+        <span class="close-support">&times;</span>
+        <h3>Need Help?</h3>
+        <p>Chat with our support team or call us at <strong>1800-123-4567</strong></p>
+        <form class="support-form">
+          <textarea placeholder="Type your message..."></textarea>
+          <button type="submit" class="btn-primary">Send</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Spacer Container for Responsive Padding -->
+    <div class="section-spacer"></div>
+    <div class="section-spacer-sm"></div>
+    <div class="section-spacer-lg"></div>
+
+    <!-- Responsive Breakpoint Placeholder -->
+    <div class="breakpoints">
+      <!-- These help CSS media queries scale layout -->
+      <span class="breakpoint-xs"></span>
+      <span class="breakpoint-sm"></span>
+      <span class="breakpoint-md"></span>
+      <span class="breakpoint-lg"></span>
+      <span class="breakpoint-xl"></span>
+    </div>
+
+      <!-- Why Choose Us Start -->
+    <section class="why-choose-us">
+      <div class="container">
+        <h2 class="section-title">Why Mother Milk Palace?</h2>
+        <div class="features-grid">
+          <div class="feature-box">
+            <i class="fas fa-bolt"></i>
+            <h4>Lightning Fast Delivery</h4>
+            <p>Get your order within 10-20 minutes at your doorstep.</p>
+          </div>
+          <div class="feature-box">
+            <i class="fas fa-certificate"></i>
+            <h4>Top Quality Products</h4>
+            <p>All items are hand-picked and quality checked.</p>
+          </div>
+          <div class="feature-box">
+            <i class="fas fa-hand-holding-usd"></i>
+            <h4>Best Prices</h4>
+            <p>Market competitive prices & daily deals just for you.</p>
+          </div>
+          <div class="feature-box">
+            <i class="fas fa-leaf"></i>
+            <h4>Fresh & Organic</h4>
+            <p>We support local farms and sustainable produce.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Why Choose Us End -->
+
+    <!-- Promo Banners Start -->
+    <section class="promo-banners">
+      <div class="container">
+        <div class="promo-grid">
+          <div class="promo-banner">
+            <img src="images/promos/free-delivery.png" alt="Free Delivery">
+            <div class="promo-text">
+              <h3>Free Delivery</h3>
+              <p>On all orders above ₹199</p>
+            </div>
+          </div>
+          <div class="promo-banner">
+            <img src="images/promos/night-delivery.png" alt="Late Night Delivery">
+            <div class="promo-text">
+              <h3>Night Owl Special</h3>
+              <p>Open till 2 AM</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Promo Banners End -->
+
+    <!-- Product Popup Modal Start -->
+    <div class="product-modal" id="productPopup">
+      <div class="modal-content">
+        <span class="close-popup">&times;</span>
+        <div class="product-popup-body">
+          <img src="images/products/sample-product.png" alt="Sample Product" class="popup-img">
+          <div class="popup-details">
+            <h3>Sample Product Name</h3>
+            <p class="price">₹99</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Great taste guaranteed!</p>
+            <div class="popup-actions">
+              <button class="btn-secondary">Add to Cart</button>
+              <button class="btn-outline">View More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Product Popup Modal End -->
+
+    <!-- Animation Placeholder Wrappers -->
+    <div class="anim-fade-in"></div>
+    <div class="anim-slide-up"></div>
+    <div class="anim-delay-1"></div>
+    <div class="anim-delay-2"></div>
+    <div class="anim-fade-bg"></div>
+
+    <!-- Decorative Background Elements -->
+    <div class="decorative-dot-grid"></div>
+    <div class="floating-blobs"></div>
+    <div class="curved-divider"></div>
+    <!-- Banner Slider Start -->
+    <section class="banner-slider">
+      <div class="container">
+        <div class="slider-wrapper">
+          <div class="slide active">
+            <img src="images/banners/banner1.png" alt="Banner 1">
+          </div>
+          <div class="slide">
+            <img src="images/banners/banner2.png" alt="Banner 2">
+          </div>
+          <div class="slide">
+            <img src="images/banners/banner3.png" alt="Banner 3">
+          </div>
+        </div>
+        <div class="slider-controls">
+          <span class="prev-slide">&#10094;</span>
+          <span class="next-slide">&#10095;</span>
+        </div>
+      </div>
+    </section>
+    <!-- Banner Slider End -->
+
+    <!-- Loyalty Rewards Start -->
+    <section class="loyalty-section">
+      <div class="container">
+        <h2 class="section-title">Loyalty Rewards</h2>
+        <div class="loyalty-grid">
+          <div class="loyalty-card">
+            <i class="fas fa-gift"></i>
+            <h4>Earn Points</h4>
+            <p>Earn reward points every time you shop.</p>
+          </div>
+          <div class="loyalty-card">
+            <i class="fas fa-star"></i>
+            <h4>Exclusive Deals</h4>
+            <p>Use points to unlock member-only offers.</p>
+          </div>
+          <div class="loyalty-card">
+            <i class="fas fa-crown"></i>
+            <h4>VIP Status</h4>
+            <p>Level up your account with every purchase.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Loyalty Rewards End -->
+
+    <!-- Product Filter UI Start -->
+    <section class="product-filter">
+      <div class="container">
+        <h2 class="section-title">Filter Products</h2>
+        <div class="filter-controls">
+          <select>
+            <option selected>All Categories</option>
+            <option>Milk, Dairy</option>
+            <option>Packaged Food</option>
+            <option>Ice Creams</option>
+            <option>Chocolates</option>
+          </select>
+          <select>
+            <option selected>Price: Low to High</option>
+            <option>Price: High to Low</option>
+          </select>
+          <input type="text" placeholder="Search products...">
+          <button class="btn-secondary">Apply</button>
+        </div>
+      </div>
+    </section>
+    <!-- Product Filter UI End -->
+
+    <!-- Newsletter Popup Start -->
+    <div class="newsletter-popup" id="newsletterPopup">
+      <div class="popup-inner">
+        <span class="popup-close">&times;</span>
+        <h3>Stay Updated!</h3>
+        <p>Join our newsletter for exclusive discounts and offers.</p>
+        <form>
+          <input type="email" placeholder="Enter your email">
+          <button type="submit" class="btn-primary">Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <!-- Newsletter Popup End -->
+
+    <!-- Scroll-Based Effects Placeholders -->
+    <div class="scroll-section fade-in-on-scroll"></div>
+    <div class="scroll-section slide-left-on-scroll"></div>
+    <div class="scroll-section zoom-on-scroll"></div>
+    <div class="scroll-section pulse-on-scroll"></div>
+
+    <!-- Featured Deals Start -->
+    <section class="featured-deals">
+      <div class="container">
+        <h2 class="section-title">Deals of the Day</h2>
+        <div class="deals-grid">
+          <div class="deal-card">
+            <img src="images/products/lays.png" alt="Lays Chips">
+            <h4>Lays Chips (Assorted)</h4>
+            <p class="deal-price">₹20 <span class="old-price">₹30</span></p>
+            <button class="btn-secondary">Add to Cart</button>
+          </div>
+          <div class="deal-card">
+            <img src="images/products/detergent.png" alt="Detergent">
+            <h4>Surf Excel 1kg</h4>
+            <p class="deal-price">₹99 <span class="old-price">₹135</span></p>
+            <button class="btn-secondary">Add to Cart</button>
+          </div>
+          <div class="deal-card">
+            <img src="images/products/juice.png" alt="Juice">
+            <h4>Real Mixed Fruit Juice</h4>
+            <p class="deal-price">₹85 <span class="old-price">₹110</span></p>
+            <button class="btn-secondary">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Featured Deals End -->
+
+    <!-- Flash Sale Countdown Timer Start -->
+    <section class="flash-sale">
+      <div class="container">
+        <h2 class="section-title">Flash Sale Ends In</h2>
+        <div class="countdown-timer" id="flashTimer">
+          <div class="time-box">
+            <span id="hours">00</span>
+            <label>Hours</label>
+          </div>
+          <div class="time-box">
+            <span id="minutes">00</span>
+            <label>Minutes</label>
+          </div>
+          <div class="time-box">
+            <span id="seconds">00</span>
+            <label>Seconds</label>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Flash Sale Countdown Timer End -->
+
+    <!-- Theme Toggle Start -->
+    <div class="theme-toggle">
+      <label class="switch">
+        <input type="checkbox" id="themeSwitch">
+        <span class="slider round"></span>
+      </label>
+      <span class="theme-label">Dark Mode</span>
+    </div>
+    <!-- Theme Toggle End -->
+
+    <!-- Social Share Section Start -->
+    <section class="social-share">
+      <div class="container">
+        <h2 class="section-title">Share the Love</h2>
+        <div class="share-icons">
+          <a href="#"><i class="fab fa-whatsapp"></i></a>
+          <a href="#"><i class="fab fa-facebook-messenger"></i></a>
+          <a href="#"><i class="fab fa-telegram-plane"></i></a>
+          <a href="#"><i class="fas fa-link"></i></a>
+        </div>
+      </div>
+    </section>
+    <!-- Social Share Section End -->
+
+    <!-- Mobile Footer Navigation Start -->
+    <nav class="mobile-footer-nav">
+      <a href="#home"><i class="fas fa-home"></i><span>Home</span></a>
+      <a href="#categories"><i class="fas fa-th"></i><span>Categories</span></a>
+      <a href="#cart"><i class="fas fa-shopping-cart"></i><span>Cart</span></a>
+      <a href="#login"><i class="fas fa-user"></i><span>Login</span></a>
+    </nav>
+    <!-- Mobile Footer Navigation End -->
+    <!-- Accessibility Toolbar Start -->
+    <div class="accessibility-toolbar">
+      <button class="font-increase">A+</button>
+      <button class="font-decrease">A-</button>
+      <button class="high-contrast">🌓</button>
+    </div>
+    <!-- Accessibility Toolbar End -->
+
+    <!-- Carousel Testimonials Start -->
+    <section class="carousel-testimonials">
+      <div class="container">
+        <h2 class="section-title">Customer Love ❤️</h2>
+        <div class="carousel-wrapper">
+          <div class="carousel-slide active">
+            <p>"Fastest delivery in my area. I love their app!"</p>
+            <h5>– Aakash V.</h5>
+          </div>
+          <div class="carousel-slide">
+            <p>"Wide range of groceries and always fresh."</p>
+            <h5>– Sneha P.</h5>
+          </div>
+          <div class="carousel-slide">
+            <p>"The UI is so smooth and offers are great!"</p>
+            <h5>– Ramesh K.</h5>
+          </div>
+        </div>
+        <div class="carousel-dots">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
+    </section>
+    <!-- Carousel Testimonials End -->
+
+    <!-- Store Locator Start -->
+    <section class="store-locator">
+      <div class="container">
+        <h2 class="section-title">Find Our Stores</h2>
+        <form class="locator-form">
+          <input type="text" placeholder="Enter your city or PIN">
+          <button type="submit" class="btn-primary">Search</button>
+        </form>
+        <div class="store-map-placeholder">
+          <p>Interactive map coming soon...</p>
+        </div>
+      </div>
+    </section>
+    <!-- Store Locator End -->
+
+    <!-- Product Grid Section 2 -->
+    <section class="category-highlight">
+      <div class="container">
+        <h2 class="section-title">Popular in Chocolates</h2>
+        <div class="products-grid">
+          <div class="product-card">
+            <img src="images/products/dairy-milk.png" alt="Dairy Milk">
+            <h4>Dairy Milk Bar</h4>
+            <p>₹40</p>
+            <button class="btn-secondary">Add to Cart</button>
+          </div>
+          <div class="product-card">
+            <img src="images/products/fivestar.png" alt="5 Star">
+            <h4>5 Star</h4>
+            <p>₹20</p>
+            <button class="btn-secondary">Add to Cart</button>
+          </div>
+          <div class="product-card">
+            <img src="images/products/perk.png" alt="Perk">
+            <h4>Perk</h4>
+            <p>₹10</p>
+            <button class="btn-secondary">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Chatbot Widget Start -->
+    <div class="chatbot-widget" id="chatBotWidget">
+      <button class="chatbot-toggle">
+        <i class="fas fa-comment-dots"></i>
+      </button>
+      <div class="chatbot-body hidden">
+        <h4>Hi! Need help?</h4>
+        <div class="chat-window">
+          <p><strong>Bot:</strong> How can I help you today?</p>
+          <!-- More dummy chats can go here -->
+        </div>
+        <input type="text" placeholder="Type your question..." />
+      </div>
+    </div>
+    <!-- Chatbot Widget End -->
+    <!-- Final Product Grid Section -->
+    <section class="final-grid">
+      <div class="container">
+        <h2 class="section-title">Bestsellers This Week</h2>
+        <div class="products-grid">
+          <div class="product-card">
+            <img src="images/products/atta.png" alt="Wheat Flour">
+            <h4>Aashirvaad Atta 5kg</h4>
+            <p>₹250</p>
+            <button class="btn-secondary">Add to Cart</button>
+          </div>
+          <div class="product-card">
+            <img src="images/products/sugar.png" alt="Sugar">
+            <h4>Premium Sugar 1kg</h4>
+            <p>₹45</p>
+            <button class="btn-secondary">Add to Cart</button>
+          </div>
+          <div class="product-card">
+            <img src="images/products/salt.png" alt="Salt">
+            <h4>Tata Salt 1kg</h4>
+            <p>₹20</p>
+            <button class="btn-secondary">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Back to Top Animated -->
+    <a href="#home" class="back-to-top" title="Back to Top">
+      <i class="fas fa-angle-up"></i>
+    </a>
+
+    <!-- Site Credits -->
+    <section class="site-credits">
+      <div class="container">
+        <p>Designed with ❤️ by <strong>The HTML + CSS + JS King 🤴</strong> for <strong>Mother Milk Palace</strong></p>
+        <p>Icons by <a href="https://fontawesome.com" target="_blank">Font Awesome</a>. Images are placeholder.</p>
+      </div>
+    </section>
+
+    <!-- Fallback Notice for No JS -->
+    <noscript>
+      <div class="no-js-warning">
+        <p>JavaScript is disabled in your browser. Some features may not work as expected.</p>
+      </div>
+    </noscript>
+
+    <!-- Final Scripts and HTML Close -->
+  </body>
+</html>
